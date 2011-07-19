@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>jQuery Late Load</title>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.lateload.min.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                $('.remote-data').lateLoad();
+            });
+        </script>
+    </head>
+    <body>
+        <h2>jQuery Late Load</h2>
+        <p>
+            Automatically loads remote data after the page is done loading.
+        </p>
+        
+        <div class="remote-data" data-src="data1.html"></div>
+        
+        <div class="remote-data" data-src="data2.html"></div>
+    </body>
+</html>
